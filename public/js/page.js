@@ -14,23 +14,23 @@ const phones = [
     }
     ,
     {
-        "id" : "a12",
-        "name" : "Samsung A12",
-        "price" : 25000,
-        "quote" : 2000,
+        "id" : "a03",
+        "name" : "Samsung A03",
+        "price" : 29000,
+        "quote" : 2300,
         "month" : 12,
         "mustpay" : 5000,
         "color" : "Negro",
         "ram" : 4,
         "rom" : 128,
-        "image" : "a12.png",
+        "image" : "a03.png",
         "link" : "https://mpago.la/1MPkpGQ"
     }
     ,
     {
         "id" : "a32",
         "name" : "Samsung A32",
-        "price" : 37000,
+        "price" : 40000,
         "quote" : 3000,
         "month" : 12,
         "mustpay" : 6500,
@@ -84,8 +84,8 @@ const phones = [
     }
     ,
     {
-        "id" : "g30",
-        "name" : "Motorola G30",
+        "id" : "e40",
+        "name" : "Motorola E40",
         "price" : 37000,
         "quote" : 3000,
         "month" : 12,
@@ -93,21 +93,35 @@ const phones = [
         "color" : "Negro",
         "ram" : 4,
         "rom" : 128,
-        "image" : "motog30.png",
+        "image" : "e40.png",
         "link" : "https://mpago.la/1LFExwq"
     }
     ,
     {
-        "id" : "g60",
-        "name" : "Motorola G60",
-        "price" : 47000,
+        "id" : "g22",
+        "name" : "Motorola G22",
+        "price" : 45000,
         "quote" : 4000,
         "month" : 12,
         "mustpay" : 7000,
-        "color" : "Azul",
+        "color" : "Negro",
         "ram" : 4,
         "rom" : 128,
-        "image" : "motog60.jpg",
+        "image" : "g22.png",
+        "link" : "https://mpago.la/1LFExwq"
+    }
+    ,
+    {
+        "id" : "g51",
+        "name" : "Motorola G51",
+        "price" : 51000,
+        "quote" : 4000,
+        "month" : 18,
+        "mustpay" : 7000,
+        "color" : "Dorado",
+        "ram" : 4,
+        "rom" : 128,
+        "image" : "g51.png",
         "link" : "https://mpago.la/1LFExwq"
     }
     ,
@@ -152,6 +166,34 @@ const phones = [
         "image" : "redminote11.png",
         "link" : "https://mpago.la/1EYEe8h"
     }
+    ,
+    {
+        "id" : "iphone11",
+        "name" : "iPhone 11",
+        "price" : 175000,
+        "quote" : 9000,
+        "month" : 18,
+        "mustpay" : 11000,
+        "color" : "Negro",
+        "ram" : 4,
+        "rom" : 128,
+        "image" : "iphone11.jpg",
+        "link" : "https://mpago.la/1vzJ9G2"
+    }
+    ,
+    {
+        "id" : "iphone12",
+        "name" : "iPhone 12",
+        "price" : 285000,
+        "quote" : 16000,
+        "month" : 18,
+        "mustpay" : 11000,
+        "color" : "Azul",
+        "ram" : 4,
+        "rom" : 128,
+        "image" : "iphone12.jpg",
+        "link" : "https://mpago.la/1vzJ9G2"
+    }
 ]
 
 const CVU = [
@@ -170,6 +212,10 @@ const CVU = [
     }
 ]
 
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
 function loadPhone(){
 
     const param = (window.location).toString().split('html?').pop()
@@ -187,9 +233,9 @@ function loadPhone(){
     let link = document.querySelector("#link")
 
     name.innerHTML = phone.name
-    price.innerHTML = "$"+phone.price
-    quote.innerHTML = phone.month+" Cuotas Mensuales de $"+phone.quote
-    mustpay.innerHTML = "Anticipo (Primer PAGO) : $"+phone.mustpay
+    price.innerHTML = "$"+numberWithCommas(phone.price)
+    quote.innerHTML = phone.month+" Cuotas Mensuales de $"+numberWithCommas(phone.quote)
+    mustpay.innerHTML = "Anticipo (Primer PAGO) : $"+numberWithCommas(phone.mustpay)
     color.innerHTML = "Color Disponible : "+phone.color
     ram.innerHTML = "Memoria RAM : "+phone.ram+"GB"
     rom.innerHTML = "Memoria : "+phone.rom+"GB"
@@ -277,4 +323,23 @@ function loadProcess(){
         goBack.classList.remove('inactive')
         goBack.classList.add('activeBtn')
     }, 3000);
+}
+
+function loadPhones(){
+    
+    phones.forEach(onePhone => {
+        let phone = document.createElement('a')
+        phone.classList.add('phoneCard')
+        phone.href = `celular.html?${onePhone.id}`
+        phone.innerHTML =`
+        <span>2X1</span>
+        <img src="./public/img/phones/${onePhone.image}" alt="${onePhone.name}">
+        <p>${onePhone.name}</p>
+        <p>Anticipo:$${numberWithCommas(onePhone.mustpay)}</p>
+        <p>${onePhone.month} cuotas de $${numberWithCommas(onePhone.quote)}</p>
+        <p>Total $${numberWithCommas(onePhone.price)}</p>
+        <button class="buttonGen">COMPRAR</button>`
+
+        document.querySelector('.phoneList').appendChild(phone)
+    })
 }

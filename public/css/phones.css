@@ -60,6 +60,19 @@ footer{
     background-color: white;
     transition: box-shadow .5s;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.phoneCard span{
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    border-radius: 0 0 1rem;
 }
 
 .phoneCard:hover{
