@@ -63,22 +63,27 @@
 }
 
 .payButtons a:nth-of-type(1){
+    padding: 1rem;
     background-color: #20d18b !important;
 }
 
 .payButtons a:nth-of-type(2){
+    padding: 1rem !important;
     background-color: #20b8d1 !important;
 }
 
 .payButtons a:nth-of-type(3){
+    padding: 1rem !important;
     background-color: #005d64 !important;
 }
 
 .payButtons a:nth-of-type(4){
+    padding: 1rem !important;
     background-color: #4ef86a !important;
 }
 
 .payButtons a:nth-of-type(5){
+    padding: 1rem !important;
     background-color: #3650e2 !important;
 }
 
