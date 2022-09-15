@@ -10,7 +10,7 @@ const phones = [
         "ram" : 2.5,
         "rom" : 16,
         "image" : "j7.png",
-        "link" : "https://mpago.la/1MPkpGQ"
+        "link" : "https://mpago.la/2BvpvfY"
     }
     ,
     {
@@ -24,7 +24,21 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "a03.png",
-        "link" : "https://mpago.la/1MPkpGQ"
+        "link" : "https://mpago.la/2BvpvfY"
+    }
+    ,
+    {
+        "id" : "a12",
+        "name" : "Samsung A12",
+        "price" : 33000,
+        "quote" : 2800,
+        "month" : 12,
+        "mustpay" : 5000,
+        "color" : "Negro",
+        "ram" : 4,
+        "rom" : 128,
+        "image" : "a12.png",
+        "link" : "https://mpago.la/2BvpvfY"
     }
     ,
     {
@@ -33,12 +47,12 @@ const phones = [
         "price" : 40000,
         "quote" : 3000,
         "month" : 12,
-        "mustpay" : 6500,
+        "mustpay" : 7000,
         "color" : "Celeste",
         "ram" : 4,
         "rom" : 128,
         "image" : "a32.jpg",
-        "link" : "https://mpago.la/2gJ6hXr"
+        "link" : "https://mpago.la/2tLc5h8"
     }
     ,
     {
@@ -52,7 +66,7 @@ const phones = [
         "ram" : 6,
         "rom" : 128,
         "image" : "a52.jpg",
-        "link" : "https://mpago.la/1LFExwq"
+        "link" : "https://mpago.la/2tLc5h8"
     }
     ,
     {
@@ -66,7 +80,7 @@ const phones = [
         "ram" : 6,
         "rom" : 128,
         "image" : "s21fe.png",
-        "link" : "https://mpago.la/1vzJ9G2"
+        "link" : "https://mpago.la/1hFLfG9"
     }
     ,
     {
@@ -80,7 +94,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "motoe7.jpg",
-        "link" : "https://mpago.la/1MPkpGQ"
+        "link" : "https://mpago.la/2BvpvfY"
     }
     ,
     {
@@ -94,7 +108,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "e40.png",
-        "link" : "https://mpago.la/1LFExwq"
+        "link" : "https://mpago.la/2tLc5h8"
     }
     ,
     {
@@ -108,7 +122,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "g22.png",
-        "link" : "https://mpago.la/1LFExwq"
+        "link" : "https://mpago.la/2tLc5h8"
     }
     ,
     {
@@ -122,7 +136,21 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "g51.png",
-        "link" : "https://mpago.la/1LFExwq"
+        "link" : "https://mpago.la/2tLc5h8"
+    }
+    ,
+    {
+        "id" : "g60",
+        "name" : "Motorola G60",
+        "price" : 55000,
+        "quote" : 3000,
+        "month" : 18,
+        "mustpay" : 7000,
+        "color" : "Azul",
+        "ram" : 6,
+        "rom" : 128,
+        "image" : "motog60.jpg",
+        "link" : "https://mpago.la/2tLc5h8"
     }
     ,
     {
@@ -136,7 +164,7 @@ const phones = [
         "ram" : 6,
         "rom" : 128,
         "image" : "motoedge20lite.png",
-        "link" : "https://mpago.la/2M1S8W3"
+        "link" : "https://mpago.la/1M25cyu"
     }
     ,
     {
@@ -150,7 +178,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "redmi9a.jpg",
-        "link" : "https://mpago.la/1MPkpGQ"
+        "link" : "https://mpago.la/2BvpvfY"
     }
     ,
     {
@@ -164,7 +192,7 @@ const phones = [
         "ram" : 6,
         "rom" : 128,
         "image" : "redminote11.png",
-        "link" : "https://mpago.la/1EYEe8h"
+        "link" : "https://mpago.la/1ZCBJQ1"
     }
     ,
     {
@@ -178,7 +206,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "iphone11.jpg",
-        "link" : "https://mpago.la/1vzJ9G2"
+        "link" : "https://mpago.la/1hFLfG9"
     }
     ,
     {
@@ -192,7 +220,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "iphone12.jpg",
-        "link" : "https://mpago.la/1vzJ9G2"
+        "link" : "https://mpago.la/1hFLfG9"
     }
 ]
 
@@ -253,6 +281,7 @@ function loadPurchase(){
     let phoneName = document.querySelector("#phoneName")
 
     let link = document.querySelector("#link")
+    let link2 = document.querySelector("#link2")
     let cvuLink = document.querySelector("#cvuLink")
     let payLink = document.querySelector("#payLink")
 
@@ -260,6 +289,7 @@ function loadPurchase(){
     phoneName.innerHTML = phone.name
 
     link.href = phone.link
+    link2.href = phone.link
     cvuLink.href = "cvu.html?"+phone.id
     payLink.href = "pay.html?"+phone.id
 }
@@ -338,8 +368,17 @@ function loadPhones(){
         <p>Anticipo:$${numberWithCommas(onePhone.mustpay)}</p>
         <p>${onePhone.month} cuotas de $${numberWithCommas(onePhone.quote)}</p>
         <p>Total $${numberWithCommas(onePhone.price)}</p>
-        <button class="buttonGen">COMPRAR</button>`
+        <button class="buttonGen">MAS INFO</button>`
 
         document.querySelector('.phoneList').appendChild(phone)
     })
+}
+
+function list(){
+    const texto = []
+    phones.forEach((phone,index) =>{
+         texto[index] = `${phone.name} : Anticipo de $${phone.mustpay} y ${phone.month} cuotas de $${phone.quote}\n`;
+    })
+
+    document.querySelector('.aca').innerHTML = texto
 }

