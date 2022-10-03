@@ -79,11 +79,12 @@
 
 .payButtons a:nth-of-type(4){
     padding: 1rem !important;
-    background-color: #4ef86a !important;
+    background-color: #45d75d !important;
 }
 
 .payButtons a:nth-of-type(5){
     padding: 1rem !important;
+    margin-top: 1.5rem;
     background-color: #3650e2 !important;
 }
 

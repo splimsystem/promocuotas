@@ -10,7 +10,7 @@ const phones = [
         "ram" : 2.5,
         "rom" : 16,
         "image" : "j7.png",
-        "link" : "https://mpago.la/2BvpvfY"
+        "link" : "https://mpago.la/1uqgnTP"
     }
     ,
     {
@@ -24,7 +24,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "a03.png",
-        "link" : "https://mpago.la/2BvpvfY"
+        "link" : "https://mpago.la/1uqgnTP"
     }
     ,
     {
@@ -38,7 +38,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "a12.png",
-        "link" : "https://mpago.la/2BvpvfY"
+        "link" : "https://mpago.la/1uqgnTP"
     }
     ,
     {
@@ -52,7 +52,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "a32.jpg",
-        "link" : "https://mpago.la/2tLc5h8"
+        "link" : "https://mpago.la/33A5CA5"
     }
     ,
     {
@@ -66,7 +66,7 @@ const phones = [
         "ram" : 6,
         "rom" : 128,
         "image" : "a52.jpg",
-        "link" : "https://mpago.la/2tLc5h8"
+        "link" : "https://mpago.la/33A5CA5"
     }
     ,
     {
@@ -80,7 +80,7 @@ const phones = [
         "ram" : 6,
         "rom" : 128,
         "image" : "s21fe.png",
-        "link" : "https://mpago.la/1hFLfG9"
+        "link" : "https://mpago.la/17UsvvQ"
     }
     ,
     {
@@ -94,7 +94,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "motoe7.jpg",
-        "link" : "https://mpago.la/2BvpvfY"
+        "link" : "https://mpago.la/1uqgnTP"
     }
     ,
     {
@@ -108,7 +108,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "e40.png",
-        "link" : "https://mpago.la/2tLc5h8"
+        "link" : "https://mpago.la/33A5CA5"
     }
     ,
     {
@@ -122,7 +122,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "g22.png",
-        "link" : "https://mpago.la/2tLc5h8"
+        "link" : "https://mpago.la/33A5CA5"
     }
     ,
     {
@@ -136,7 +136,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "g51.png",
-        "link" : "https://mpago.la/2tLc5h8"
+        "link" : "https://mpago.la/33A5CA5"
     }
     ,
     {
@@ -150,7 +150,7 @@ const phones = [
         "ram" : 6,
         "rom" : 128,
         "image" : "motog60.jpg",
-        "link" : "https://mpago.la/2tLc5h8"
+        "link" : "https://mpago.la/33A5CA5"
     }
     ,
     {
@@ -164,7 +164,7 @@ const phones = [
         "ram" : 6,
         "rom" : 128,
         "image" : "motoedge20lite.png",
-        "link" : "https://mpago.la/1M25cyu"
+        "link" : "https://mpago.la/1wbUrbE"
     }
     ,
     {
@@ -178,7 +178,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "redmi9a.jpg",
-        "link" : "https://mpago.la/2BvpvfY"
+        "link" : "https://mpago.la/1uqgnTP"
     }
     ,
     {
@@ -192,7 +192,7 @@ const phones = [
         "ram" : 6,
         "rom" : 128,
         "image" : "redminote11.png",
-        "link" : "https://mpago.la/1ZCBJQ1"
+        "link" : "https://mpago.la/1S2rNx9"
     }
     ,
     {
@@ -206,7 +206,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "iphone11.jpg",
-        "link" : "https://mpago.la/1hFLfG9"
+        "link" : "https://mpago.la/17UsvvQ"
     }
     ,
     {
@@ -220,7 +220,7 @@ const phones = [
         "ram" : 4,
         "rom" : 128,
         "image" : "iphone12.jpg",
-        "link" : "https://mpago.la/1hFLfG9"
+        "link" : "https://mpago.la/17UsvvQ"
     }
 ]
 
